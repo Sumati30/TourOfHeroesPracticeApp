@@ -1,0 +1,14 @@
+.box , .card-box{
+    background: rgb(214, 240, 122);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    border-left: 7px solid transparent;
+    cursor: pointer;
+    
+    
+} 
+.green{border-left-color:#29b60d ; }
+
+.active {
+    box-shadow: 0,30px, 20px, 10px, rgba(0, 0, 0, 0.10);
+}

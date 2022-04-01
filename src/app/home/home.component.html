@@ -1,0 +1,31 @@
+<div class='container'>
+    <div class="card-deck">
+      <a>
+        <div class="card box green" [routerLink]="['/datagrid']" >
+          <div class="card-body text-center">
+            <p class="card-text">Click here to display DATA-GRID</p>
+          </div>
+        </div>
+      </a>
+      <a>
+        <div class="card box green" [routerLink]="['/heroes']">
+            <div class="card-body text-center">
+              <p class="card-text">Click here to display HEROES-LIST</p>
+            </div>
+          </div>
+      </a>
+      <div    (click)="card('1')" >
+          <div class="card-box green" [ngClass]="{'active' : selectedCard == '1' }">
+            <div class="card-boxIn">
+              <p>USER-FORM</p>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row" *ngIf="selectedCard == '1' ">
+     <div [routerLink]="['/heroes']"></div>>
+  </div>
+</div>

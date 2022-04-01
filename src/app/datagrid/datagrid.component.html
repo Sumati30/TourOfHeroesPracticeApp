@@ -1,0 +1,12 @@
+<dx-data-grid
+  id="gridContainer"
+  [dataSource]="customers"
+  keyExpr="ID"
+  [columns]="['CompanyName', 'City', 'State', 'Phone', 'Fax']"
+  [showBorders]="true"
+>
+</dx-data-grid>
+<br/><br/>
+<nav>
+    <a routerLink="/home"><button>Back</button></a>
+</nav>
